@@ -2,4 +2,10 @@
     <string name="app_name">Sprak Implementation</string>
     <string name="sprak">Sprak</string>
     <string name="loading">loading</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="usuario">Usuario</string>
+    <string name="login">LOGIN</string>
+    <string name="registrate">REGISTRATE</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email</string>
 </resources>
