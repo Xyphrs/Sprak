@@ -1,10 +1,6 @@
 package com.example.sprakimplementation;
 
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,18 +8,23 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
-import com.example.sprakimplementation.databinding.FragmentLoginBinding;
-import com.example.sprakimplementation.databinding.FragmentRegisterBinding;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
 
-public class RegisterFragment extends Fragment {
-    FragmentRegisterBinding binding;
+import com.example.sprakimplementation.databinding.FragmentRegisterBinding;
+import com.example.sprakimplementation.databinding.FragmentRegisterThanksBinding;
+
+public class RegisterThanks extends Fragment {
+    FragmentRegisterThanksBinding binding;
     NavController navController;
     Button botonRegister;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_register, container, false);
+        return inflater.inflate(R.layout.fragment_register_thanks, container, false);
     }
 
     @Override
@@ -31,7 +32,7 @@ public class RegisterFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         navController = Navigation.findNavController(view);
-        botonRegister = view.findViewById(R.id.registerButton);
-        botonRegister.setOnClickListener(v -> navController.navigate(R.id.action_RegisterFragment_to_registerThanks));
+        botonRegister = view.findViewById(R.id.buttonRegisterThanks);
+        botonRegister.setOnClickListener(v -> navController.navigate(R.id.action_registerThanks_to_chooseALanguage));
     }
 }

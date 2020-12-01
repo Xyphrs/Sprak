@@ -9,7 +9,11 @@
         android:id="@+id/RegisterFragment"
         android:name="com.example.sprakimplementation.RegisterFragment"
         android:label="fragment_register"
-        tools:layout="@layout/fragment_register" />
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_RegisterFragment_to_registerThanks"
+            app:destination="@id/registerThanks" />
+    </fragment>
 
     <fragment
         android:id="@+id/loginFragment"
@@ -30,5 +34,19 @@
             android:id="@+id/action_splashScreenFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/registerThanks"
+        android:name="com.example.sprakimplementation.RegisterThanks"
+        android:label="fragment_register_thanks"
+        tools:layout="@layout/fragment_register_thanks" >
+        <action
+            android:id="@+id/action_registerThanks_to_chooseALanguage"
+            app:destination="@id/chooseALanguage" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseALanguage"
+        android:name="com.example.sprakimplementation.ChooseALanguage"
+        android:label="fragment_choose_a_language"
+        tools:layout="@layout/fragment_choose_a_language" />
 
 </navigation>
