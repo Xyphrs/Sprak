@@ -1,6 +1,5 @@
 package com.example.sprakimplementation;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
@@ -14,8 +13,6 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import com.example.sprakimplementation.databinding.FragmentSplashScreenBinding;
-
-import java.util.Objects;
 
 public class SplashScreenFragment extends Fragment {
     private FragmentSplashScreenBinding binding;
@@ -36,5 +33,4 @@ public class SplashScreenFragment extends Fragment {
         new Handler().postDelayed(() -> navController.navigate(R.id.action_splashScreenFragment_to_loginFragment), 5000);
 
     }
-
 }

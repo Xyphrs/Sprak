@@ -20,5 +20,12 @@
     <string name="frances">Frances</string>
     <string name="portugues">Portugues</string>
     <string name="danes">Danés</string>
+    <string name="stars">stars</string>
+    <string name="test">test</string>
+    <string name="social">Social</string>
+    <string name="ranking">Ranking</string>
+    <string name="versus">Versus</string>
+    <string name="aprender">Aprender</string>
+    <string name="work_in_progress">Work in Progress...</string>
 
 </resources>
