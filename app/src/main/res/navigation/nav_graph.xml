@@ -60,13 +60,17 @@
     </fragment>
     <fragment
         android:id="@+id/languageMenu"
-        android:name="com.example.sprakimplementation.languageMenu"
+        android:name="com.example.sprakimplementation.LanguageMenu"
         android:label="fragment_language_menu"
         tools:layout="@layout/fragment_language_menu" />
     <fragment
         android:id="@+id/wipFragment"
-        android:name="com.example.sprakimplementation.wipFragment"
+        android:name="com.example.sprakimplementation.WipFragment"
         android:label="fragment_wip"
-        tools:layout="@layout/fragment_wip" />
+        tools:layout="@layout/fragment_wip" >
+        <action
+            android:id="@+id/action_wipFragment_to_chooseALanguage"
+            app:destination="@id/chooseALanguage" />
+    </fragment>
 
 </navigation>
