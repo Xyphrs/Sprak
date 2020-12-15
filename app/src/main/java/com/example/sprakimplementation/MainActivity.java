@@ -9,10 +9,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.NavDestination;
 import androidx.navigation.fragment.NavHostFragment;
+import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.example.sprakimplementation.databinding.ActivityBottomBinding;
 import com.example.sprakimplementation.databinding.ActivityMainBinding;
-import com.example.sprakimplementation.databinding.FragmentLanguageMenuBinding;
+
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
@@ -22,34 +25,41 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView((binding = ActivityMainBinding.inflate(getLayoutInflater())).getRoot());
 
+        setSupportActionBar(binding.toolbarDraw);
+
+        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
+                R.id.languageFragment, R.id.versusFragment, R.id.rankingFragment, R.id.socialFragment
+        )
+                .setOpenableLayout(binding.drawerLayout)
+                .build();
+
         NavController navController = ((NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment)).getNavController();
+        NavigationUI.setupWithNavController(binding.navView, navController);
+        NavigationUI.setupWithNavController(binding.toolbarDraw, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.bottomNavView, navController);
 
-        navController.addOnDestinationChangedListener(new NavController.OnDestinationChangedListener() {
-            @Override
-            public void onDestinationChanged(@NonNull NavController controller, @NonNull NavDestination destination, @Nullable Bundle arguments) {
-                if(destination.getId()==R.id.loginFragment){
-                    binding.toolbar.setVisibility(View.GONE);
-                    binding.bottomNavView.setVisibility(View.GONE);
-                }else if( destination.getId()==R.id.registerFragment){
-                    binding.toolbar.setVisibility(View.GONE);
-                    binding.bottomNavView.setVisibility(View.GONE);
-                }else if( destination.getId()==R.id.splashScreenFragment){
-                    binding.toolbar.setVisibility(View.GONE);
-                    binding.bottomNavView.setVisibility(View.GONE);
-                }else if( destination.getId()==R.id.registerThanks){
-                    binding.toolbar.setVisibility(View.GONE);
-                    binding.bottomNavView.setVisibility(View.GONE);
-                }else if( destination.getId()==R.id.chooseALanguage){
-                    binding.toolbar.setVisibility(View.GONE);
-                    binding.bottomNavView.setVisibility(View.GONE);
-                }else if( destination.getId()==R.id.wipFragment){
-                    binding.toolbar.setVisibility(View.GONE);
-                    binding.bottomNavView.setVisibility(View.GONE);
-                }
-                else {
-                    binding.toolbar.setVisibility(View.VISIBLE);
-                }
+        navController.addOnDestinationChangedListener((controller, destination, arguments) -> {
+            if(destination.getId()==R.id.loginFragment){
+                binding.toolbarDraw.setVisibility(View.GONE);
+                binding.bottomNavView.setVisibility(View.GONE);
+            }else if( destination.getId()==R.id.registerFragment){
+                binding.toolbarDraw.setVisibility(View.GONE);
+                binding.bottomNavView.setVisibility(View.GONE);
+            }else if( destination.getId()==R.id.splashScreenFragment){
+                binding.toolbarDraw.setVisibility(View.GONE);
+                binding.bottomNavView.setVisibility(View.GONE);
+            }else if( destination.getId()==R.id.registerThanks){
+                binding.bottomNavView.setVisibility(View.GONE);
+                binding.toolbarDraw.setVisibility(View.GONE);
+            }else if( destination.getId()==R.id.chooseALanguage){
+                binding.bottomNavView.setVisibility(View.GONE);
+                binding.toolbarDraw.setVisibility(View.GONE);
+            }else if( destination.getId()==R.id.wipFragment){
+                binding.bottomNavView.setVisibility(View.GONE);
+                binding.toolbarDraw.setVisibility(View.GONE);
+            } else {
+                binding.bottomNavView.setVisibility(View.VISIBLE);
+                binding.toolbarDraw.setVisibility(View.VISIBLE);
             }
         });
     }

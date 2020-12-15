@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
@@ -23,9 +24,6 @@
         <action
             android:id="@+id/action_loginFragment_to_RegisterFragment"
             app:destination="@id/registerFragment" />
-        <action
-            android:id="@+id/action_loginFragment_to_languageMenu"
-            app:destination="@id/languageMenu" />
     </fragment>
 
     <fragment
@@ -37,6 +35,7 @@
             android:id="@+id/action_splashScreenFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/registerThanks"
         android:name="com.example.sprakimplementation.RegisterThanks"
@@ -46,23 +45,17 @@
             android:id="@+id/action_registerThanks_to_chooseALanguage"
             app:destination="@id/chooseALanguage" />
     </fragment>
+
     <fragment
         android:id="@+id/chooseALanguage"
         android:name="com.example.sprakimplementation.ChooseALanguage"
         android:label="fragment_choose_a_language"
         tools:layout="@layout/fragment_choose_a_language" >
         <action
-            android:id="@+id/action_chooseALanguage_to_languageMenu"
-            app:destination="@id/languageMenu" />
-        <action
             android:id="@+id/action_chooseALanguage_to_wipFragment"
             app:destination="@id/wipFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/languageMenu"
-        android:name="com.example.sprakimplementation.LanguageMenu"
-        android:label="fragment_language_menu"
-        tools:layout="@layout/fragment_language_menu" />
+
     <fragment
         android:id="@+id/wipFragment"
         android:name="com.example.sprakimplementation.WipFragment"
@@ -72,5 +65,6 @@
             android:id="@+id/action_wipFragment_to_chooseALanguage"
             app:destination="@id/chooseALanguage" />
     </fragment>
+
 
 </navigation>

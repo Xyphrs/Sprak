@@ -27,5 +27,10 @@
     <string name="versus">Versus</string>
     <string name="aprender">Aprender</string>
     <string name="work_in_progress">Work in Progress...</string>
+    <string name="title_activity_bottom">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="drawtext">Hola</string>
 
 </resources>

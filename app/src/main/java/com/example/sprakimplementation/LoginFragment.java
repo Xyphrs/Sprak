@@ -1,5 +1,6 @@
 package com.example.sprakimplementation;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +19,8 @@ public class LoginFragment extends Fragment {
     FragmentLoginBinding binding;
     NavController navController;
     Button botonRegister;
+    Button botonLogin;
+
 
 
     @Override
@@ -34,6 +37,13 @@ public class LoginFragment extends Fragment {
         navController = Navigation.findNavController(view);
         botonRegister = view.findViewById(R.id.buttonRegister);
         botonRegister.setOnClickListener(v -> navController.navigate(R.id.action_loginFragment_to_RegisterFragment));
+
+        botonLogin = view.findViewById(R.id.buttonLogin);
+        botonLogin.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), BottomActivity.class);
+            startActivity(intent);
+        });
+
 
 
     }

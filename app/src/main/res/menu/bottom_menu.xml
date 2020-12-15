@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/languageMenu"
-        android:icon="@android:drawable/ic_menu_directions"
+        android:id="@+id/languageFragment"
+        android:icon="@drawable/school"
         android:title="@string/aprender"/>
 
     <item
         android:id="@+id/versusFragment"
-        android:icon="@android:drawable/ic_menu_directions"
+        android:icon="@drawable/versus"
         android:title="@string/versus" />
 
     <item
         android:id="@+id/rankingFragment"
-        android:icon="@android:drawable/ic_menu_directions"
+        android:icon="@drawable/ranking"
         android:title="@string/ranking" />
 
     <item
         android:id="@+id/socialFragment"
-        android:icon="@android:drawable/ic_menu_directions"
+        android:icon="@drawable/social"
         android:title="@string/social" />
 </menu>
