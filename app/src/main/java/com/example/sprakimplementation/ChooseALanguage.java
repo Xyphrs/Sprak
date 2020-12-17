@@ -1,18 +1,16 @@
 package com.example.sprakimplementation;
 
-import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
-
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.LinearLayout;
 
 import com.example.sprakimplementation.databinding.FragmentChooseALanguageBinding;
 
@@ -44,16 +42,10 @@ public class ChooseALanguage extends Fragment {
         navController = Navigation.findNavController(view);
 
         botonCatalan = view.findViewById(R.id.catalanSeleccion);
-        botonCatalan.setOnClickListener(v -> {
-            Intent intent = new Intent(getActivity(), BottomActivity.class);
-            startActivity(intent);
-        });
+        botonCatalan.setOnClickListener(v -> navController.navigate(R.id.action_chooseALanguage_to_languageFragment));
 
         botonIngles = view.findViewById(R.id.inglesSeleccion);
-        botonIngles.setOnClickListener(v -> {
-            Intent intent = new Intent(getActivity(), BottomActivity.class);
-            startActivity(intent);
-        });
+        botonIngles.setOnClickListener(v -> navController.navigate(R.id.action_chooseALanguage_to_languageFragment));
 
         botonPortu = view.findViewById(R.id.portuguesSeleccion);
         botonPortu.setOnClickListener(v -> navController.navigate(R.id.action_chooseALanguage_to_wipFragment));

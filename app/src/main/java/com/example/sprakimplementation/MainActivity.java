@@ -3,16 +3,12 @@ package com.example.sprakimplementation;
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
-import androidx.navigation.NavDestination;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.sprakimplementation.databinding.ActivityBottomBinding;
 import com.example.sprakimplementation.databinding.ActivityMainBinding;
 
 import java.util.Objects;
@@ -33,10 +29,11 @@ public class MainActivity extends AppCompatActivity {
                 .setOpenableLayout(binding.drawerLayout)
                 .build();
 
-        NavController navController = ((NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment)).getNavController();
+        NavController navController = ((NavHostFragment) Objects.requireNonNull(getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment))).getNavController();
         NavigationUI.setupWithNavController(binding.navView, navController);
         NavigationUI.setupWithNavController(binding.toolbarDraw, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.bottomNavView, navController);
+        binding.navView.setItemIconTintList(null);
 
         navController.addOnDestinationChangedListener((controller, destination, arguments) -> {
             if(destination.getId()==R.id.loginFragment){

@@ -39,10 +39,8 @@ public class LoginFragment extends Fragment {
         botonRegister.setOnClickListener(v -> navController.navigate(R.id.action_loginFragment_to_RegisterFragment));
 
         botonLogin = view.findViewById(R.id.buttonLogin);
-        botonLogin.setOnClickListener(v -> {
-            Intent intent = new Intent(getActivity(), BottomActivity.class);
-            startActivity(intent);
-        });
+        botonLogin.setOnClickListener(v -> navController.navigate(R.id.action_loginFragment_to_languageFragment));
+
 
 
 

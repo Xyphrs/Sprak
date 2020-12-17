@@ -24,6 +24,9 @@
         <action
             android:id="@+id/action_loginFragment_to_RegisterFragment"
             app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_languageFragment"
+            app:destination="@id/languageFragment" />
     </fragment>
 
     <fragment
@@ -54,6 +57,9 @@
         <action
             android:id="@+id/action_chooseALanguage_to_wipFragment"
             app:destination="@id/wipFragment" />
+        <action
+            android:id="@+id/action_chooseALanguage_to_languageFragment"
+            app:destination="@id/languageFragment" />
     </fragment>
 
     <fragment
@@ -66,5 +72,28 @@
             app:destination="@id/chooseALanguage" />
     </fragment>
 
+    <fragment
+        android:id="@+id/rankingFragment"
+        android:name="com.example.sprakimplementation.RankingFragment"
+        android:label="fragment_ranking"
+        tools:layout="@layout/fragment_ranking" />
+
+    <fragment
+        android:id="@+id/socialFragment"
+        android:name="com.example.sprakimplementation.SocialFragment"
+        android:label="fragment_social"
+        tools:layout="@layout/fragment_social" />
+
+    <fragment
+        android:id="@+id/versusFragment"
+        android:name="com.example.sprakimplementation.VersusFragment"
+        android:label="fragment_versus"
+        tools:layout="@layout/fragment_versus" />
+
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.example.sprakimplementation.LanguageFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" />
 
 </navigation>

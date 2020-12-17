@@ -10,8 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SprakImplementation">
         <activity
-            android:name=".BottomActivity"/>
-        <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>

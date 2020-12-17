@@ -32,5 +32,8 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="drawtext">Hola</string>
+    <string name="profilepicture">Profile Picture</string>
+    <string name="daniel_romero">Daniel Romero</string>
+    <string name="learning_gmail_com">learning@elpuig.xeill.net</string>
 
 </resources>
