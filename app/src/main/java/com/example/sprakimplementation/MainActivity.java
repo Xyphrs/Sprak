@@ -54,6 +54,12 @@ public class MainActivity extends AppCompatActivity {
             }else if( destination.getId()==R.id.wipFragment){
                 binding.bottomNavView.setVisibility(View.GONE);
                 binding.toolbarDraw.setVisibility(View.GONE);
+            } else if( destination.getId()==R.id.testFragment){
+                binding.bottomNavView.setVisibility(View.GONE);
+                binding.toolbarDraw.setVisibility(View.VISIBLE);
+            } else if( destination.getId()==R.id.testFragment2){
+                binding.bottomNavView.setVisibility(View.GONE);
+                binding.toolbarDraw.setVisibility(View.VISIBLE);
             } else {
                 binding.bottomNavView.setVisibility(View.VISIBLE);
                 binding.toolbarDraw.setVisibility(View.VISIBLE);

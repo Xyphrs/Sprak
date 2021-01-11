@@ -5,4 +5,10 @@
         <item name="flow_verticalAlign">top</item>
         <item name="android:textAlignment">center</item>
     </style>
+
+    <style name="tests">
+        <item name="android:textSize">30sp</item>
+        <item name="flow_verticalAlign">top</item>
+        <item name="android:textAlignment">center</item>
+    </style>
 </resources>

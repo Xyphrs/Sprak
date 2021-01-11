@@ -35,5 +35,17 @@
     <string name="profilepicture">Profile Picture</string>
     <string name="daniel_romero">Daniel Romero</string>
     <string name="learning_gmail_com">learning@elpuig.xeill.net</string>
+    <string name="_0">0</string>
+    <string name="traduce_esta_frase">Traduce esta Frase</string>
+    <string name="testquestion">Hello, my name is Paco. I am 22 years old and i have 2 cousins.</string>
+    <string name="hola">Hola...</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="selecciona_la_traduccion_correcta">Selecciona la traduccion correcta</string>
+    <string name="vaca">Vaca</string>
+    <string name="pato">Pato</string>
+    <string name="pollo">Pollo</string>
+    <string name="ganso">Ganso</string>
+    <string name="cabra">Cabra</string>
+    <string name="toro">Toro</string>
 
 </resources>
