@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/noruegoSeleccion"
+        android:id="@+id/wipFragment"
         android:icon="@drawable/norskflag"
         android:title="@string/noruego"/>
 
@@ -12,7 +12,7 @@
         android:title="@string/catalan"/>
 
     <item
-        android:id="@+id/inglesSeleccion"
+        android:id="@+id/languageFragment"
         android:icon="@drawable/ukflag"
         android:title="@string/ingles"/>
 

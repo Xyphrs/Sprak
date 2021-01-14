@@ -112,6 +112,19 @@
         android:id="@+id/testFragment2"
         android:name="com.example.sprakimplementation.TestFragment2"
         android:label="fragment_test2"
-        tools:layout="@layout/fragment_test2" />
+        tools:layout="@layout/fragment_test2" >
+        <action
+            android:id="@+id/action_testFragment2_to_finalTestFragment"
+            app:destination="@id/finalTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finalTestFragment"
+        android:name="com.example.sprakimplementation.FinalTestFragment"
+        android:label="fragment_final_test"
+        tools:layout="@layout/fragment_final_test" >
+        <action
+            android:id="@+id/action_finalTestFragment_to_languageFragment"
+            app:destination="@id/languageFragment" />
+    </fragment>
 
 </navigation>

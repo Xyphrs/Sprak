@@ -42,7 +42,7 @@ public class ChooseALanguage extends Fragment {
         navController = Navigation.findNavController(view);
 
         botonCatalan = view.findViewById(R.id.catalanSeleccion);
-        botonCatalan.setOnClickListener(v -> navController.navigate(R.id.action_chooseALanguage_to_languageFragment));
+        botonCatalan.setOnClickListener(v -> navController.navigate(R.id.action_chooseALanguage_to_wipFragment));
 
         botonIngles = view.findViewById(R.id.inglesSeleccion);
         botonIngles.setOnClickListener(v -> navController.navigate(R.id.action_chooseALanguage_to_languageFragment));

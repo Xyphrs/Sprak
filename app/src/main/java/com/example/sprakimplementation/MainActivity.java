@@ -60,7 +60,19 @@ public class MainActivity extends AppCompatActivity {
             } else if( destination.getId()==R.id.testFragment2){
                 binding.bottomNavView.setVisibility(View.GONE);
                 binding.toolbarDraw.setVisibility(View.VISIBLE);
-            } else {
+            } else if( destination.getId()==R.id.finalTestFragment){
+                binding.bottomNavView.setVisibility(View.GONE);
+                binding.toolbarDraw.setVisibility(View.GONE);
+            } else if( destination.getId()==R.id.versusFragment){
+                binding.bottomNavView.setVisibility(View.VISIBLE);
+                binding.toolbarDraw.setVisibility(View.GONE);
+            } else if( destination.getId()==R.id.rankingFragment){
+                binding.bottomNavView.setVisibility(View.VISIBLE);
+                binding.toolbarDraw.setVisibility(View.GONE);
+            } else if( destination.getId()==R.id.socialFragment){
+                binding.bottomNavView.setVisibility(View.VISIBLE);
+                binding.toolbarDraw.setVisibility(View.GONE);
+            }else {
                 binding.bottomNavView.setVisibility(View.VISIBLE);
                 binding.toolbarDraw.setVisibility(View.VISIBLE);
             }

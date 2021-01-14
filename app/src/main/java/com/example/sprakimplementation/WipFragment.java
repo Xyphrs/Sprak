@@ -32,7 +32,7 @@ public class WipFragment extends Fragment {
 
         /* Delay de la WipFragment antes de volver al ChooseALanguageFragment */
         navController = Navigation.findNavController(view);
-        new Handler().postDelayed(() -> navController.navigate(R.id.action_wipFragment_to_chooseALanguage), 3000);
+        new Handler().postDelayed(() -> navController.navigate(R.id.action_wipFragment_to_chooseALanguage), 2000);
 
     }
 

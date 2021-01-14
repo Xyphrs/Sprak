@@ -21,12 +21,12 @@
     <string name="portugues">Portugues</string>
     <string name="danes">Danés</string>
     <string name="stars">stars</string>
-    <string name="test">test</string>
+    <string name="test">Test</string>
     <string name="social">Social</string>
     <string name="ranking">Ranking</string>
     <string name="versus">Versus</string>
     <string name="aprender">Aprender</string>
-    <string name="work_in_progress">Work in Progress...</string>
+    <string name="work_in_progress">Work in Progress…</string>
     <string name="title_activity_bottom">MainActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
@@ -38,7 +38,7 @@
     <string name="_0">0</string>
     <string name="traduce_esta_frase">Traduce esta Frase</string>
     <string name="testquestion">Hello, my name is Paco. I am 22 years old and i have 2 cousins.</string>
-    <string name="hola">Hola...</string>
+    <string name="hola">Hola…</string>
     <string name="siguiente">Siguiente</string>
     <string name="selecciona_la_traduccion_correcta">Selecciona la traduccion correcta</string>
     <string name="vaca">Vaca</string>
@@ -47,5 +47,15 @@
     <string name="ganso">Ganso</string>
     <string name="cabra">Cabra</string>
     <string name="toro">Toro</string>
+    <string name="resultados">Has respondido correctamente 50% de las preguntas.</string>
+    <string name="test_completado">Test Completado</string>
+    <string name="bronze">bronze</string>
+    <string name="bronze_league">Bronze League</string>
+    <string name="compite">Compite contra otros jugadores cada semana para ver quien es el que ha aprendido mas!</string>
+    <string name="first">1.</string>
+    <string name="primero">Primero</string>
+    <string name="_30">30</string>
+    <string name="segundo">Segundo</string>
+    <string name="tercero">Tercero</string>
 
 </resources>

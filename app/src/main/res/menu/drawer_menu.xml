@@ -3,7 +3,7 @@
     <item
         android:id="@+id/wipFragment"
         android:icon="@drawable/norskflag"
-        android:title="@string/noruego"/>
+        android:title="@string/noruego" />
 
     <item
         android:id="@+id/catalanSeleccion"
@@ -11,7 +11,7 @@
         android:title="@string/catalan"/>
 
     <item
-        android:id="@+id/inglesSeleccion"
+        android:id="@+id/languageFragment"
         android:icon="@drawable/ukflag"
         android:title="@string/ingles"/>
 
