@@ -98,6 +98,9 @@
         <action
             android:id="@+id/action_languageFragment_to_testFragment"
             app:destination="@id/testFragment" />
+        <action
+            android:id="@+id/action_languageFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
     </fragment>
     <fragment
         android:id="@+id/testFragment"
@@ -126,5 +129,10 @@
             android:id="@+id/action_finalTestFragment_to_languageFragment"
             app:destination="@id/languageFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.sprakimplementation.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 
 </navigation>

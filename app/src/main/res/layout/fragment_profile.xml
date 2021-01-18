@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:src="@drawable/avatararar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="@string/cambiar_avatar"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/nombreInput"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:width="350dp"
+        android:layout_gravity="center"
+        android:background="@drawable/edittextborder"
+        android:fontFamily="@font/raleway_extrabold"
+        android:hint="@string/nombre"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/lightgrey"
+        android:textSize="12sp"
+        android:layout_weight="1"/>
+
+
+    <EditText
+        android:id="@+id/usernameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:width="350dp"
+        android:layout_gravity="center"
+        android:background="@drawable/edittextborder"
+        android:fontFamily="@font/raleway_extrabold"
+        android:hint="@string/usuario"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/lightgrey"
+        android:textSize="12sp"
+        android:layout_weight="1"/>
+
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:width="350dp"
+        android:layout_gravity="center"
+        android:background="@drawable/edittextborder"
+        android:fontFamily="@font/raleway_extrabold"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/lightgrey"
+        android:textSize="12sp"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:width="350dp"
+        android:layout_gravity="center"
+        android:background="@drawable/edittextborder"
+        android:fontFamily="@font/raleway_extrabold"
+        android:hint="@string/contrase_a"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/lightgrey"
+        android:textSize="12sp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:width="240dp"
+        android:backgroundTint="@color/red"
+        android:text="@string/sign_out"
+        android:textColor="@color/white"
+        android:layout_weight="1"
+        android:layout_gravity="center"/>
+</LinearLayout>
