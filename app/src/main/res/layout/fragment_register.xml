@@ -90,16 +90,18 @@
 
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/registerButton"
         android:layout_width="wrap_content"
-        android:layout_height="48dp"
+        android:layout_height="45dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="140dp"
         android:width="240dp"
         android:backgroundTint="@color/white"
         android:textColor="@color/black"
+        android:background="@drawable/buttonborder"
         android:text="@string/registrate"
+        android:fontFamily="@font/raleway_extrabold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

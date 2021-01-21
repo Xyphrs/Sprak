@@ -45,5 +45,10 @@
         android:icon="@drawable/danishflag"
         android:title="@string/danes"/>
 
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/star"
+        android:title="@string/profile"/>
+
 
 </menu>

@@ -12,7 +12,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="50dp"
         android:fontFamily="@font/raleway_extrabold"
         android:text="@string/sprak"
         android:textColor="@color/white"
@@ -24,7 +24,7 @@
     <EditText
         android:id="@+id/usernameInput"
         android:layout_width="wrap_content"
-        android:layout_height="34dp"
+        android:layout_height="50dp"
         android:layout_marginTop="25dp"
         android:width="350dp"
         android:autofillHints=""
@@ -46,7 +46,7 @@
     <EditText
         android:id="@+id/passwordInput"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="8dp"
         android:width="350dp"
@@ -66,29 +66,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/usernameInput" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:width="240dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="20sp"
+        android:width="340dp"
+        android:background="@drawable/buttonborder"
         android:backgroundTint="@color/white"
         android:text="@string/login"
         android:textColor="@color/black"
+        android:fontFamily="@font/raleway_extrabold"
         app:layout_constraintBottom_toTopOf="@id/buttonRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordInput" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonRegister"
         android:layout_width="wrap_content"
-        android:layout_height="48dp"
+        android:layout_height="45dp"
         android:layout_marginBottom="170dp"
-        android:width="240dp"
+        android:width="280dp"
         android:backgroundTint="@color/white"
+        android:background="@drawable/buttonborder"
         android:text="@string/registrate"
         android:textColor="@color/black"
+        android:fontFamily="@font/raleway_extrabold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
