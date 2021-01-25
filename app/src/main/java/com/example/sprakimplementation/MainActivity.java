@@ -80,5 +80,13 @@ public class MainActivity extends AppCompatActivity {
                 binding.toolbarDraw.setVisibility(View.VISIBLE);
             }
         });
+
+        binding.toolbarDraw.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                binding.toolbarDraw.setVisibility(View.GONE);
+                return false;
+            }
+        });
     }
 }
