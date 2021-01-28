@@ -37,7 +37,7 @@ public class TestFragment2 extends Fragment {
         /* Hacer click en el boton "Registrate" y la navegacion hacia fragmentRegister */
         navController = Navigation.findNavController(view);
         botonSiguiente = view.findViewById(R.id.siguiente);
-        botonSiguiente.setOnClickListener(v -> navController.navigate(R.id.action_testFragment2_to_finalTestFragment));
+        botonSiguiente.setOnClickListener(v -> navController.navigate(R.id.action_testFragment2_to_testFragment32));
 
     }
 }

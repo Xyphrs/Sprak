@@ -117,8 +117,8 @@
         android:label="fragment_test2"
         tools:layout="@layout/fragment_test2" >
         <action
-            android:id="@+id/action_testFragment2_to_finalTestFragment"
-            app:destination="@id/finalTestFragment" />
+            android:id="@+id/action_testFragment2_to_testFragment32"
+            app:destination="@id/testFragment32" />
     </fragment>
     <fragment
         android:id="@+id/finalTestFragment"
@@ -134,5 +134,32 @@
         android:name="com.example.sprakimplementation.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/testFragment32"
+        android:name="com.example.sprakimplementation.TestFragment3"
+        android:label="fragment_test3"
+        tools:layout="@layout/fragment_test3" >
+        <action
+            android:id="@+id/action_testFragment32_to_testFragment42"
+            app:destination="@id/testFragment42" />
+    </fragment>
+    <fragment
+        android:id="@+id/testFragment42"
+        android:name="com.example.sprakimplementation.TestFragment4"
+        android:label="fragment_test4"
+        tools:layout="@layout/fragment_test4" >
+        <action
+            android:id="@+id/action_testFragment42_to_testFragment52"
+            app:destination="@id/testFragment52" />
+    </fragment>
+    <fragment
+        android:id="@+id/testFragment52"
+        android:name="com.example.sprakimplementation.TestFragment5"
+        android:label="fragment_test5"
+        tools:layout="@layout/fragment_test5" >
+        <action
+            android:id="@+id/action_testFragment52_to_finalTestFragment"
+            app:destination="@id/finalTestFragment" />
+    </fragment>
 
 </navigation>

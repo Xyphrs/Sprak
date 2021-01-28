@@ -1,30 +1,31 @@
 package com.example.sprakimplementation;
 
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
-import com.example.sprakimplementation.databinding.FragmentFinalTestBinding;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
 
-public class FinalTestFragment extends Fragment {
+import com.example.sprakimplementation.databinding.FragmentTest3Binding;
+import com.example.sprakimplementation.databinding.FragmentTestBinding;
 
-    FragmentFinalTestBinding binding;
+public class TestFragment3 extends Fragment {
+    FragmentTest3Binding binding;
     NavController navController;
-    ConstraintLayout botonSiguiente;
+    Button botonSiguiente;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        return inflater.inflate(R.layout.fragment_final_test, container, false);
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_test3, container, false);
     }
 
 
@@ -34,7 +35,8 @@ public class FinalTestFragment extends Fragment {
 
         /* Hacer click en el boton "Registrate" y la navegacion hacia fragmentRegister */
         navController = Navigation.findNavController(view);
-        botonSiguiente = view.findViewById(R.id.finaltest);
-        botonSiguiente.setOnClickListener(v -> navController.navigate(R.id.action_finalTestFragment_to_languageFragment));
+        botonSiguiente = view.findViewById(R.id.siguiente);
+        botonSiguiente.setOnClickListener(v -> navController.navigate(R.id.action_testFragment32_to_testFragment42));
+
     }
 }
