@@ -59,19 +59,19 @@ public class MainActivity extends AppCompatActivity {
                 binding.toolbarDraw.setVisibility(View.GONE);
             } else if( destination.getId()==R.id.testFragment){
                 binding.bottomNavView.setVisibility(View.GONE);
-                binding.toolbarDraw.setVisibility(View.VISIBLE);
+                binding.toolbarDraw.setVisibility(View.GONE);
             } else if( destination.getId()==R.id.testFragment2){
                 binding.bottomNavView.setVisibility(View.GONE);
-                binding.toolbarDraw.setVisibility(View.VISIBLE);
+                binding.toolbarDraw.setVisibility(View.GONE);
             }  else if( destination.getId()==R.id.testFragment32) {
                 binding.bottomNavView.setVisibility(View.GONE);
-                binding.toolbarDraw.setVisibility(View.VISIBLE);
+                binding.toolbarDraw.setVisibility(View.GONE);
             }  else if( destination.getId()==R.id.testFragment42) {
                 binding.bottomNavView.setVisibility(View.GONE);
-                binding.toolbarDraw.setVisibility(View.VISIBLE);
+                binding.toolbarDraw.setVisibility(View.GONE);
             }   else if( destination.getId()==R.id.testFragment52) {
                 binding.bottomNavView.setVisibility(View.GONE);
-                binding.toolbarDraw.setVisibility(View.VISIBLE);
+                binding.toolbarDraw.setVisibility(View.GONE);
             }  else if( destination.getId()==R.id.finalTestFragment){
                 binding.bottomNavView.setVisibility(View.GONE);
                 binding.toolbarDraw.setVisibility(View.GONE);
@@ -93,30 +93,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        binding.toolbarDraw.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
-                new FancyToast()
-                        .with(MainActivity.this)
-                        .setGravity(Gravity.CENTER, 0,0)
-                        .setIcon(R.drawable.star)
-                        .setText("Estrellas: Puntuacion en el lenguage")
-                        .cornerRadius(60)
-                        .show();
+        binding.toolbarDraw.setOnLongClickListener(v -> {
+            new FancyToast()
+                    .with(MainActivity.this)
+                    .setGravity(Gravity.CENTER, 0,0)
+                    .setIcon(R.drawable.star)
+                    .setText("Estrellas: Puntuacion en el lenguage")
+                    .cornerRadius(60)
+                    .show();
 
-                new FancyToast()
-                        .with(MainActivity.this)
-                        .setGravity(Gravity.CENTER, 0 ,200)
-                        .setIcon(R.drawable.social)
-                        .setText("Racha de dias: Dias consecutivos en los cuales has completado un test correctamente")
-                        .cornerRadius(60)
-                        .show();
+            new FancyToast()
+                    .with(MainActivity.this)
+                    .setGravity(Gravity.CENTER, 0 ,200)
+                    .setIcon(R.drawable.social)
+                    .setText("Racha de dias: Dias consecutivos en los cuales has completado un test correctamente")
+                    .cornerRadius(60)
+                    .show();
 
-//                Toast toast = Toast.makeText(MainActivity.this,"Estrellas: Puntuacion en el lenguage  \n\nCalendario: Dias consecutivos en los cuales has completado un test correctamente", Toast.LENGTH_LONG);
-//                toast.setGravity(Gravity.CENTER, 0, 0);
-//                toast.show();
-                return false;
-            }
+            return false;
         });
     }
 }
