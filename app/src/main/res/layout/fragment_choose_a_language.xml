@@ -7,277 +7,289 @@
     android:background="@color/grey"
     android:orientation="vertical">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:text="@string/chooseALanguage"
-        android:textAlignment="center"
-        android:fontFamily="@font/raleway_extrabold"
-        android:textColor="@color/white"
-        android:layout_weight="2"
-        android:gravity="center"
-        android:textSize="42sp"/>
+        android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:id="@+id/noruegoSeleccion"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageNoruega"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/norskflag"
-            android:layout_weight="1"
-            android:padding="12dp"
-            android:contentDescription="@string/noruego" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:fontFamily="@font/raleway_extrabold"
+                android:gravity="center"
+                android:text="@string/chooseALanguage"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="42sp" />
 
-        <TextView
-            android:id="@+id/textNoruega"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="@string/noruego"
-            android:textColor="@color/white"
-            android:fontFamily="@font/raleway_extrabold"
-            android:textAlignment="center"
-            android:gravity="center"
-            android:textSize="25sp"
-            android:layout_weight="2"/>
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/noruegoSeleccion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-    <LinearLayout
-        android:id="@+id/catalanSeleccion"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/imageNoruega"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/noruego"
+                    android:padding="12dp"
+                    android:src="@drawable/norskflag" />
 
-        <ImageView
-            android:id="@+id/imageCatalan"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/catalanflag"
-            android:layout_weight="1"
-            android:padding="12dp"
-            android:contentDescription="@string/noruego" />
+                <TextView
+                    android:id="@+id/textNoruega"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/raleway_extrabold"
+                    android:gravity="center"
+                    android:text="@string/noruego"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+            </LinearLayout>
 
-        <TextView
-            android:id="@+id/textCatalan"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="@string/catalan"
-            android:textColor="@color/white"
-            android:fontFamily="@font/raleway_extrabold"
-            android:textAlignment="center"
-            android:gravity="center"
-            android:textSize="25sp"
-            android:layout_weight="2"/>
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/catalanSeleccion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-    <LinearLayout
-        android:id="@+id/inglesSeleccion"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/imageCatalan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/noruego"
+                    android:padding="12dp"
+                    android:src="@drawable/catalanflag" />
 
-        <ImageView
-            android:id="@+id/imageIngles"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/ukflag"
-            android:layout_weight="1"
-            android:padding="12dp"
-            android:contentDescription="@string/noruego" />
+                <TextView
+                    android:id="@+id/textCatalan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/raleway_extrabold"
+                    android:gravity="center"
+                    android:text="@string/catalan"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+            </LinearLayout>
 
-        <TextView
-            android:id="@+id/textIngles"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="@string/ingles"
-            android:textColor="@color/white"
-            android:fontFamily="@font/raleway_extrabold"
-            android:textAlignment="center"
-            android:gravity="center"
-            android:textSize="25sp"
-            android:layout_weight="2"/>
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/inglesSeleccion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-    <LinearLayout
-        android:id="@+id/suecoSeleccion"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/imageIngles"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/noruego"
+                    android:padding="12dp"
+                    android:src="@drawable/ukflag" />
 
-        <ImageView
-            android:id="@+id/imageSueco"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/sweflag"
-            android:padding="12dp"
-            android:layout_weight="1"
-            android:contentDescription="@string/noruego" />
+                <TextView
+                    android:id="@+id/textIngles"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/raleway_extrabold"
+                    android:gravity="center"
+                    android:text="@string/ingles"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+            </LinearLayout>
 
-        <TextView
-            android:id="@+id/textSueco"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="@string/sueco"
-            android:textColor="@color/white"
-            android:fontFamily="@font/raleway_extrabold"
-            android:textAlignment="center"
-            android:gravity="center"
-            android:textSize="25sp"
-            android:layout_weight="2"/>
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/suecoSeleccion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-    <LinearLayout
-        android:id="@+id/alemanSeleccion"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/imageSueco"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/noruego"
+                    android:padding="12dp"
+                    android:src="@drawable/sweflag" />
 
-        <ImageView
-            android:id="@+id/imageAleman"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/germanflag"
-            android:layout_weight="1"
-            android:padding="12dp"
-            android:contentDescription="@string/noruego" />
+                <TextView
+                    android:id="@+id/textSueco"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/raleway_extrabold"
+                    android:gravity="center"
+                    android:text="@string/sueco"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+            </LinearLayout>
 
-        <TextView
-            android:id="@+id/textAleman"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="@string/aleman"
-            android:textColor="@color/white"
-            android:fontFamily="@font/raleway_extrabold"
-            android:textAlignment="center"
-            android:gravity="center"
-            android:textSize="25sp"
-            android:layout_weight="2"/>
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/alemanSeleccion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-    <LinearLayout
-        android:id="@+id/italianoSeleccion"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/imageAleman"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/noruego"
+                    android:padding="12dp"
+                    android:src="@drawable/germanflag" />
 
-        <ImageView
-            android:id="@+id/imageItaliano"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/italianflag"
-            android:layout_weight="1"
-            android:padding="12dp"
-            android:contentDescription="@string/noruego" />
+                <TextView
+                    android:id="@+id/textAleman"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/raleway_extrabold"
+                    android:gravity="center"
+                    android:text="@string/aleman"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+            </LinearLayout>
 
-        <TextView
-            android:id="@+id/textItaliano"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="@string/italiano"
-            android:textColor="@color/white"
-            android:fontFamily="@font/raleway_extrabold"
-            android:textAlignment="center"
-            android:gravity="center"
-            android:textSize="25sp"
-            android:layout_weight="2"/>
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/italianoSeleccion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-    <LinearLayout
-        android:id="@+id/francesSeleccion"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/imageItaliano"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/noruego"
+                    android:padding="12dp"
+                    android:src="@drawable/italianflag" />
 
-        <ImageView
-            android:id="@+id/imageFrances"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/frenchflag"
-            android:layout_weight="1"
-            android:padding="12dp"
-            android:contentDescription="@string/noruego" />
+                <TextView
+                    android:id="@+id/textItaliano"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/raleway_extrabold"
+                    android:gravity="center"
+                    android:text="@string/italiano"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+            </LinearLayout>
 
-        <TextView
-            android:id="@+id/textFrances"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="@string/frances"
-            android:textColor="@color/white"
-            android:fontFamily="@font/raleway_extrabold"
-            android:textAlignment="center"
-            android:gravity="center"
-            android:textSize="25sp"
-            android:layout_weight="2"/>
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/francesSeleccion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-    <LinearLayout
-        android:id="@+id/portuguesSeleccion"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/imageFrances"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/noruego"
+                    android:padding="12dp"
+                    android:src="@drawable/frenchflag" />
 
-        <ImageView
-            android:id="@+id/imagePortugues"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/portflag"
-            android:layout_weight="1"
-            android:padding="12dp"
-            android:contentDescription="@string/noruego" />
+                <TextView
+                    android:id="@+id/textFrances"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/raleway_extrabold"
+                    android:gravity="center"
+                    android:text="@string/frances"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+            </LinearLayout>
 
-        <TextView
-            android:id="@+id/textPortugues"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="@string/portugues"
-            android:textColor="@color/white"
-            android:fontFamily="@font/raleway_extrabold"
-            android:textAlignment="center"
-            android:gravity="center"
-            android:textSize="25sp"
-            android:layout_weight="2"/>
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/portuguesSeleccion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-    <LinearLayout
-        android:id="@+id/danesSeleccion"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/imagePortugues"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/noruego"
+                    android:padding="12dp"
+                    android:src="@drawable/portflag" />
 
-        <ImageView
-            android:id="@+id/imageDanes"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/danishflag"
-            android:padding="12dp"
-            android:layout_weight="1"
-            android:contentDescription="@string/noruego" />
+                <TextView
+                    android:id="@+id/textPortugues"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/raleway_extrabold"
+                    android:gravity="center"
+                    android:text="@string/portugues"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+            </LinearLayout>
 
-        <TextView
-            android:id="@+id/textDanes"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="@string/danes"
-            android:textColor="@color/white"
-            android:fontFamily="@font/raleway_extrabold"
-            android:textAlignment="center"
-            android:gravity="center"
-            android:textSize="25sp"
-            android:layout_weight="2"/>
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/danesSeleccion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
+                <ImageView
+                    android:id="@+id/imageDanes"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/noruego"
+                    android:padding="12dp"
+                    android:src="@drawable/danishflag" />
+
+                <TextView
+                    android:id="@+id/textDanes"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/raleway_extrabold"
+                    android:gravity="center"
+                    android:text="@string/danes"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
