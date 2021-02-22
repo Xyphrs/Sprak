@@ -74,9 +74,13 @@
 
     <fragment
         android:id="@+id/rankingFragment"
-        android:name="com.example.sprakimplementation.RankingFragment"
+        android:name="com.example.sprakimplementation.RecyclerView.RankingFragment"
         android:label="fragment_ranking"
-        tools:layout="@layout/fragment_ranking" />
+        tools:layout="@layout/fragment_ranking" >
+        <action
+            android:id="@+id/action_rankingFragment_to_insertRanksFragment"
+            app:destination="@id/insertRanksFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/socialFragment"
@@ -165,5 +169,10 @@
             android:id="@+id/action_testFragment52_to_finalTestFragment"
             app:destination="@id/finalTestFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/insertRanksFragment"
+        android:name="com.example.sprakimplementation.Room.InsertRanksFragment"
+        android:label="fragment_insert_ranks"
+        tools:layout="@layout/fragment_insert_ranks" />
 
 </navigation>
